@@ -7,7 +7,11 @@ import com.google.android.material.tabs.TabLayout
 import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
 import agh.edu.pl.inf3.mobiapp.ui.main.SectionsPagerAdapter
+import android.view.Menu
+import android.view.MenuInflater
 import android.widget.ImageButton
+import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,11 +24,15 @@ class MainActivity : AppCompatActivity() {
         val tabs: TabLayout = findViewById(R.id.tabs)
         tabs.setupWithViewPager(viewPager)
 
-        val menu: ImageButton = findViewById(R.id.menu_button)
-        menu.setOnClickListener {view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        setSupportActionBar(toolbar2)
+        toolbar2.setTitle(R.string.app_name)
+
+
+//        val menu: ImageButton = findViewById(R.id.menu_button)
+//        menu.setOnClickListener {view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
 
@@ -32,5 +40,10 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return true
     }
 }
