@@ -4,8 +4,9 @@
     <string name="tab_text_2">Today</string>
     <string name="tab_text_3">Tomorrow</string>
     <string name="menu_button_description">Menu</string>
-    <string name="menu_item1">Zapisz</string>
-    <string name="menu_item2">Przeglądaj</string>
-    <string name="menu_item3">O aplikacji</string>
-    <string name="menu_item4">Wyjście</string>
+    <string name="menu_item1">Safe</string>
+    <string name="menu_item2">Scroll</string>
+    <string name="menu_item3">About</string>
+    <string name="menu_item4">Exit</string>
+    <string name="main_screen_no_image">Image not found</string>
 </resources>
