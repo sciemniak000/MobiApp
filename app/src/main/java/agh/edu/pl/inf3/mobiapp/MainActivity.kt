@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
             R.id.item1 -> {
-                Snackbar.make(window.decorView, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(window.decorView, R.string.saved_confirmation, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
             }
             R.id.item3 -> {
