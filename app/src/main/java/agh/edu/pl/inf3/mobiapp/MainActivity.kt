@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
             }
             R.id.item2 -> {
-                val intent = Intent(this, AboutActivity::class.java)
+                val intent = Intent(this, ScrollActivity::class.java)
                 startActivity(intent)
             }
             R.id.item3 -> {
