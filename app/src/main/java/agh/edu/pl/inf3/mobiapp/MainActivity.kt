@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val fab: FloatingActionButton = findViewById(R.id.fab)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, R.string.saved_confirmation, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
     }
@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             R.id.item1 -> {
                 Snackbar.make(window.decorView, R.string.saved_confirmation, Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
+            }
+            R.id.item2 -> {
+                val intent = Intent(this, AboutActivity::class.java)
+                startActivity(intent)
             }
             R.id.item3 -> {
                 val intent = Intent(this, AboutActivity::class.java)
