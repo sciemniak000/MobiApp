@@ -18,4 +18,5 @@
 
     WEAIiIB, AGH</string>
     <string name="saved_confirmation">The image was successfully saved</string>
+    <string name="deleted_confirmation">The image was successfully deleted</string>
 </resources>
