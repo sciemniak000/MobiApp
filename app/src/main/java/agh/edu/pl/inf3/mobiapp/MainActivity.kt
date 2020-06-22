@@ -59,6 +59,9 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, AboutActivity::class.java)
                 startActivity(intent)
             }
+            R.id.item4 -> {
+                finishAndRemoveTask()
+            }
             else -> {
                 Snackbar.make(window.decorView, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
