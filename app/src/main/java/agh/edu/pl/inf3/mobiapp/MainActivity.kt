@@ -9,10 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import agh.edu.pl.inf3.mobiapp.ui.main.SectionsPagerAdapter
 import android.content.Intent
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.ImageButton
-import androidx.appcompat.widget.Toolbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,13 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar2)
         toolbar2.setTitle(R.string.app_name)
-
-
-//        val menu: ImageButton = findViewById(R.id.menu_button)
-//        menu.setOnClickListener {view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
 
