@@ -4,18 +4,16 @@
     <string name="tab_text_2">Today</string>
     <string name="tab_text_3">Tomorrow</string>
     <string name="menu_button_description">Menu</string>
-    <string name="menu_item1">Safe</string>
+    <string name="menu_item1">Save</string>
     <string name="menu_item2">Scroll</string>
     <string name="menu_item3">About</string>
     <string name="menu_item4">Exit</string>
     <string name="main_screen_no_image">Image not found</string>
     <string name="about_description">The app was created as a final project for Android course.\n\n
-
     Authors:\n
     Przemysław Indyka\n
     Wiktor Mendalka\n
     Adrian Kozień\n\n
-
     WEAIiIB, AGH</string>
     <string name="saved_confirmation">The image was successfully saved</string>
     <string name="deleted_confirmation">The image was successfully deleted</string>
