@@ -30,10 +30,14 @@ class MainActivity : AppCompatActivity(), DownloadMemeTask.Interface {
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             Snackbar.make(view, R.string.saved_confirmation, Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                .setAction("Action", null).show()
         }
 
         val task = DownloadMemeTask(this)
+
+        val db = DatabaseUtils(applicationContext)
+        db.onCreate(db.writableDatabase)
+        db.close()
 
         // pobieranie z receivera
         //task.execute(TomorrowImage.H11)
@@ -47,6 +51,7 @@ class MainActivity : AppCompatActivity(), DownloadMemeTask.Interface {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.item1 -> {
+
                 Snackbar.make(
                     findViewById(R.id.constraintLayout),
                     R.string.saved_confirmation,
